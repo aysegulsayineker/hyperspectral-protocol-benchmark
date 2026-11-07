@@ -21,7 +21,9 @@ import hsidata as hd  # noqa: E402
 PRETTY = {"SVM": "spectral SVM", "CNN2D": "2-D CNN", "CNN3D": "3-D CNN",
           "HybridSN": "HybridSN", "SSFTT": "SSFTT", "ASCN": "ASCN", "LSSA": "LSSA"}
 SCENE = {"PaviaU": "Pavia University", "PaviaC": "Pavia Centre",
-         "Salinas": "Salinas", "Houston": "Houston 2013"}
+         "Salinas": "Salinas", "Houston": "Houston 2013",
+         "IndianPines": "Indian Pines", "KSC": "Kennedy Space Center",
+         "Botswana": "Botswana"}
 CANDIDATES = ["PaviaU", "PaviaC", "Salinas", "Houston", "IndianPines", "KSC", "Botswana"]
 
 
@@ -69,7 +71,11 @@ def t_scenes(cfg: dict) -> pd.DataFrame:
                          smallest_class=int(np.bincount(y.ravel())[1:].min()),
                          block=used, classes_retained=kept,
                          supports_protocol="yes" if supported else "no"))
-    return pd.DataFrame(rows)
+    out = pd.DataFrame(rows)
+    # The block side is an integer; a NaN for the excluded scenes must not turn
+    # the whole column into floats and print it as "33.0".
+    out["block"] = out.block.astype("Int64")
+    return out
 
 
 def t_leakage(cfg: dict) -> pd.DataFrame:
