@@ -1,0 +1,5 @@
+model,protocol,from_patch,to_patch,gain,n_pairs,p
+2-D CNN,random,5,15,0.02,20,<0.0001
+2-D CNN,disjoint,5,15,0.0122,20,0.4091
+SSFTT,random,3,15,0.0439,20,<0.0001
+SSFTT,disjoint,3,15,0.0274,20,0.0266

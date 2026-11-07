@@ -1,0 +1,8 @@
+scene,height,width,bands,classes,labelled,smallest_class,block,classes_retained,supports_protocol
+Pavia University,610,340,103,9,42776,947,33.0,9,yes
+Pavia Centre,1096,715,102,9,148152,2685,18.0,9,yes
+Salinas,512,217,204,16,54129,916,18.0,13,yes
+Houston 2013,349,1905,144,15,14999,323,33.0,13,yes
+IndianPines,145,145,200,16,10249,20,,6,no
+KSC,512,614,176,13,5211,105,,7,no
+Botswana,1476,256,145,14,3248,95,,7,no

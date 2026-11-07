@@ -1,0 +1,25 @@
+scene,protocol,patch,frac_test_patches_touching_train,mean_train_pixels_in_window
+Pavia University,random,5,0.8457,1.94
+Pavia University,random,7,0.9438,3.61
+Pavia University,random,9,0.9719,5.67
+Pavia University,random,11,0.9843,8.07
+Pavia University,random,15,0.9944,13.82
+Pavia University,block-disjoint,15,0.0,0.0
+Pavia Centre,random,5,0.8649,2.04
+Pavia Centre,random,7,0.9603,3.87
+Pavia Centre,random,9,0.9827,6.12
+Pavia Centre,random,11,0.9904,8.78
+Pavia Centre,random,15,0.9958,15.22
+Pavia Centre,block-disjoint,15,0.0,0.0
+Salinas,random,5,0.9018,2.26
+Salinas,random,7,0.986,4.41
+Salinas,random,9,0.9981,7.2
+Salinas,random,11,0.9996,10.61
+Salinas,random,15,1.0,19.19
+Salinas,block-disjoint,15,0.0,0.0
+Houston 2013,random,5,0.7467,1.46
+Houston 2013,random,7,0.8578,2.36
+Houston 2013,random,9,0.8987,3.23
+Houston 2013,random,11,0.9164,4.08
+Houston 2013,random,15,0.9344,5.85
+Houston 2013,block-disjoint,15,0.0,0.0
