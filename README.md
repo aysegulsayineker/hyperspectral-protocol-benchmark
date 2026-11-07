@@ -42,6 +42,7 @@ src/            protocol, models, training and the table generator
   run_grid.py       the protocol cross
   run_mechanism.py  window, capacity, training budget, low label
   make_paper_tables.py  every table, straight from the result CSVs
+  make_figures.py       both figures, from the same CSVs
 results/        run-level CSVs, one row per run
 tables/         the eleven generated tables, CSV and Markdown
 figures/        the two figures
@@ -61,6 +62,7 @@ Place the `.mat` files in `data/` under the names `hsidata.load_cube` expects.
 python src/run_grid.py          # protocol cross, 420 runs
 python src/run_mechanism.py     # window, capacity, budget, low label, 1,320 runs
 python src/make_paper_tables.py # regenerates tables/ from results/
+python src/make_figures.py      # regenerates figures/ from results/ and tables/
 ```
 
 No number in the tables is typed by hand; they are generated from the CSVs in
